@@ -1,0 +1,144 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description" content="Join our Raspberry Pi summer camp!")
+    link(rel="icon" type="image/x-icon" href="images/favicon.ico")
+    title Raspberry Pi Summer Camp
+    link(rel="stylesheet" href="css/styles.css")
+  body.is-size-5
+    section.hero.is-medium
+      .hero-body 
+        .container
+          .columns.is-vcentered.hs-columns
+            .column
+              h1.title.is-size-2 Intro to Raspberry Pi Camp
+              p.is-size-4 When: July 18-22 2022, 2:00-5:00 PM 
+              p.is-size-4 Where: <a href="https://ashevillemath.com/">Asheville Math</a>, Asheville NC
+              p.is-size-4.mt-3 A summer camp where students will learn about the <a href="#rpi">Raspberry Pi computer</a>, <a href="#linux">Linux</a>, and coding with <a href="#python">Python</a>. We'll use code to <a href="#games">create games</a>, build <a href="#websites">websites</a>, <a href="#sonic-pi">compose music</a>, and <a href="#electronics">control electronics</a>!
+              a(href="https://ashevillemath.com/summer-camp#block-805cba1be1120c39ee0b")
+                button.button.is-primary.my-4.is-size-5 Sign up
+            .column
+              img.hs-mw-t-500(src="images/rpi-hero.jpg")
+    section.section.has-background-light 
+      .container
+        h2.title.has-text-centered What are we going to do at the camp?
+        .columns 
+          .column.is-offset-1.is-10 
+            .columns 
+              .column
+                .card 
+                  .card-image.has-text-centered.hs-card-image
+                    figure.image.is-inline-block
+                      img(src="images/students-fun.jpg" alt="Students having fun")
+                  .card-content.has-background-white.hs-card-content
+                    .content
+                      h2.title Have Fun
+                      p.is-size-5 This is a summer camp! We have to have fun!
+              .column
+                .card 
+                  .card-image.has-text-centered.hs-card-image
+                    figure.image.is-inline-block
+                      img(src="images/students-learn.jpg" alt="Students learning")
+                  .card-content.has-background-white.hs-card-content
+                    .content
+                      h2.title Learn
+                      p.is-size-5 Don't waste your time playing video games, learn to make your own games! And more!
+    section.section.has-background-primary#rpi
+      .container.has-text-centered.has-text-white
+        h2.title.has-text-white What is the Raspberry Pi?
+        p.mb-5 The Raspberry Pi is a credit card sized computer designed to help students learn computer science.
+        .columns 
+          .column.has-text-centered
+            img.hs-mw-4(src="images/rpi-c.png" alt="Raspberry Pi" loading="lazy")
+        p Let's look at some of the things we can do with the Raspberry Pi below!
+    section.section#python
+      .container 
+        .columns.is-vcentered.hs-reverse-columns
+          .column
+            pre 
+              code.is-size-5.hs-code.pb-3.
+                name = input("Please enter your name: ")
+                print(f"Hello {name}")
+          .column
+            h2.title Code with Python
+            p Python is a great first programming language to learn. It's easy to start coding right away.
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus totam illum accusantium consectetur aliquid, laborum ipsam sint tenetur possimus recusandae beatae voluptates, aspernatur eveniet culpa nulla omnis quisquam iste ab?
+    section.section.has-background-light#games
+      .container 
+        .columns.is-vcentered.hs-columns
+          .column
+            h2.title Code your own games
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus totam illum accusantium consectetur aliquid, laborum ipsam sint tenetur possimus recusandae beatae voluptates, aspernatur eveniet culpa nulla omnis quisquam iste ab?
+          .column
+            pre 
+              code.is-size-5.hs-code.pb-3.
+                You are in a land full of dragons. In front of you,
+                you see two caves. In one cave, the dragon is friendly
+                and will share his treasure with you. The other dragon
+                is greedy and hungry, and will eat you on sight.
+                Which cave will you go into? (1 or 2)
+                1
+                You approach the cave...
+                It is dark and spooky...
+                A large dragon jumps out in front of you!
+                He opens his jaws and...
+    section.section#electronics
+      .container 
+        .columns.is-vcentered.hs-reverse-columns
+          .column.has-text-centered
+            img.hs-mw-4(src="images/rpi-timer.jpg" alt="Raspberry Pi and breadboard" loading="lazy")
+          .column
+            h2.title Hook up a Raspberry Pi to a breadboard and prototype your own electronic gadgets!
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, neque, fuga voluptate atque quaerat deleniti accusamus, beatae illo obcaecati nulla officia a. Saepe fugiat perspiciatis autem, provident facere architecto molestiae.
+            .content
+              ul 
+                li Control LEDs
+                li Intruder detector
+                li Electronic games
+    section.section.has-background-primary#sonic-pi
+      .container 
+        .columns.is-vcentered.hs-columns
+          .column.has-text-centered.is-4
+            img.hs-mw.hs-rounded(src="images/sonicpi-logo.png" alt="Sonic Pi" loading="lazy")
+          .column.has-text-white
+            h2.title.has-text-white Use code to create music with Sonic Pi!
+            p We'll use Sonic Pi to create our own music with code. Listen to some of the features of Sonic Pi straight from their website:
+            .content
+              ul
+                li Sonic Pi is a code-based music creation and performance tool.
+                li Simple enough for computing and music lessons.
+                li Powerful enough for professional musicians.
+                li Diverse community of over 1.8 million live coders.
+                li Learn to code creatively by composing or performing music in an incredible range of styles from Classical & Jazz to Grime & EDM.
+    section.section#websites
+      .container 
+        .columns.is-vcentered.hs-columns
+          .column
+            h2.title Build your own website!
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus accusantium repudiandae ex, sapiente facere ab dolore sequi aliquid ad maiores corporis ipsa? Doloribus repellat voluptate facilis aut saepe nemo?
+          .column
+            pre 
+              code.is-size-5.hs-code.pb-3.
+                &lt;h1&gt;My own website!&lt;/h1&gt;
+                &lt;p&gt;Hello and welcome to my website.&lt;/p&gt;
+    section.section.has-background-light#linux
+      .container 
+        .columns.is-vcentered.hs-reverse-columns
+          .column.has-text-centered.is-3
+            img.hs-mw(src="images/linux.png" alt="Linux" loading="lazy")
+          .column
+            h2.title Linux
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus accusantium repudiandae ex, sapiente facere ab dolore sequi aliquid ad maiores corporis ipsa? Doloribus repellat voluptate facilis aut saepe nemo?
+    section.section.has-background-dark 
+      .container.has-text-centered
+        h2.title.is-size-3.has-text-white Don't delay! Sign up today!
+        a(href="https://ashevillemath.com/summer-camp#block-805cba1be1120c39ee0b")
+          button.button.is-danger.is-medium.my-5 Sign up
+        p.has-text-white You can also email <a href="mailto:learn@ashevillemath.com" class="has-text-link-light">learn@ashevillemath.com</a> for more information.
+    footer.footer 
+      .content.has-text-centered
+        p.is-size-6 The content and schedule of the camp may be changed.
+        p Copyright &copy; 2022 Hamilton Scott

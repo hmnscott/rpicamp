@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import "../../node_modules/bulma/bulma.sass";
+
+html {
+    scroll-behavior: smooth;
+}
+.hs-card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hs-card-content {
+    height: 250px;
+}
+pre code {
+    display: block;
+}
+pre {
+    background-color: #2b2b2b;
+    color: white;
+}
+.hs-mw {
+    max-width: 200px;
+}
+.hs-mw-4 {
+    max-width: 400px;
+}
+.hs-rounded {
+    border-radius: 50%;
+}
+@include touch {
+    .hs-reverse-columns {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .hs-columns {
+        flex-direction: column;
+        display: flex;
+    }
+    .hs-mw-t-500 {
+        max-width: 500px;
+    }
+}
+@include mobile {
+    .hs-code {
+        max-width: 400px;
+    }
+}
